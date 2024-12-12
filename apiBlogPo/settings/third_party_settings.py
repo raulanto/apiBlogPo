@@ -9,7 +9,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
-
+    'blog'
 ]
 
 # defino la url para que mande al admin
