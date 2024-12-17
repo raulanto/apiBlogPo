@@ -19,6 +19,8 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    # whitenoise
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -46,7 +48,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'apiBlogPo.wsgi.application'
+WSGI_APPLICATION = 'apiBlogPo.wsgi.app'
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
@@ -69,6 +71,6 @@ LANGUAGE_CODE = 'es-Mx'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*','.vercel.app']
 
 

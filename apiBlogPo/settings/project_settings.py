@@ -20,7 +20,10 @@ DATABASES = {
 }
 
 # Archivos estáticos
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # defino la url para que mande al admin
 LOGIN_REDIRECT_URL = '/admin/'
