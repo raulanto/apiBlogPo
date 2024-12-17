@@ -23,18 +23,4 @@ class UserViewSet(
 
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
-    # filter_backends = [DjangoFilterBackend,filters.SearchFilter]
-    # filterset_fields = ['usuario']
-
-    # def update(self, request, *args, **kwargs):
-    #     self.serializer_class = ProductoUpdateSerializer
-    #     response = super().update(request, *args, **kwargs)
-    #
-    #     # # Registra el cambio
-    #     # objeto = self.get_object()
-    #     # mensaje = "Producto actualizado"
-    #     # registrarCambio(request, objeto, mensaje)
-    #     #
-    #     # return response
-
 

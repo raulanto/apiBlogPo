@@ -16,6 +16,7 @@ class CustomAuthTokenAPI(ObtainAuthToken):
             'token': token.key,
             'user_id': user.pk,
             'email': user.email,
+            'username': user.username,
             'first_name': user.first_name,
             'groups': list(groups)  # Convertir el queryset a una lista
         })
