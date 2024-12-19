@@ -71,6 +71,7 @@ LANGUAGE_CODE = 'es-Mx'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
-ALLOWED_HOSTS = ['*','.vercel.app']
+# api/settings.py
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app','*']
 
 
