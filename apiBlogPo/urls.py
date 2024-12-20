@@ -9,6 +9,7 @@ from rest_framework import permissions
 
 from .CustomAuthToken import CustomAuthTokenAPI
 
+
 schema_view = get_schema_view(
     openapi.Info(
         title="Sensores API",
@@ -29,6 +30,8 @@ urlpatterns = [
     path('api-token-auth/', CustomAuthTokenAPI.as_view()),
     path('api-auth/', include('rest_framework.urls')),
     path('api/v1/', include('blog.api.urls')),
+    path('blog/', include('blog.urls')),
+
 
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

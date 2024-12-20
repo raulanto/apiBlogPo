@@ -20,7 +20,7 @@ DATABASES = {
 }
 
 # Archivos estáticos
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # defino la url para que mande al admin
 LOGIN_REDIRECT_URL = '/admin/'

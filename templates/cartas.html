@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <h2>Cartas</h2>
+    {% if cartas %}
+        si hay Cartas
+        <ul>
+            {% for carta in cartas %}
+                <li>
+                    {{ carta.id }} /{{ carta.titulo }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        No hay cartas
+
+    {% endif %}
+
+{% endblock %}

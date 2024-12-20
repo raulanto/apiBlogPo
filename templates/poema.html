@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <h2>Poemas</h2>
+
+    {% if poemas %}
+        <ul>
+            {% for poema in poemas %}
+                <li>
+                    {{ poema.titulo }}
+                </li>
+            {% endfor %}
+
+        </ul>
+    {% else %}
+        No hay poemas
+    {% endif %}
+
+
+
+{% endblock %}
