@@ -1,5 +1,6 @@
 {% extends 'index.html' %}
-
+{% load compress %}
+{% load static %}
 {% block content %}
 
     <h2>Poemas</h2>
@@ -16,7 +17,8 @@
     {% else %}
         No hay poemas
     {% endif %}
-
+    
+    <img src="{% static 'img/img1.jpeg' %}" class="w-40">
 
 
 {% endblock %}

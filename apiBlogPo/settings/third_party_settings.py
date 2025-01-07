@@ -5,7 +5,7 @@ THIRD_PARTY_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
-
+    'compressor',  # new
 ]
 
 LOCAL_APPS = [
@@ -20,10 +20,9 @@ INSTALLED_APPS += THIRD_PARTY_APPS + LOCAL_APPS
 
 # Configuración específica para aplicaciones de terceros
 CORS_ALLOW_ALL_ORIGINS = True
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+CORS_ALLOWED_ORIGINS = ["http://localhost:3000",]
 
-]
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',

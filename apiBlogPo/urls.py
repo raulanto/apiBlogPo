@@ -25,7 +25,6 @@ schema_view = get_schema_view(
 )
 
 urlpatterns = [
-    path('', lambda request: redirect('admin/', permanent=False)),
     path('admin/', admin.site.urls),
     path('api-token-auth/', CustomAuthTokenAPI.as_view()),
     path('api-auth/', include('rest_framework.urls')),
